@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>UI Assignment</title>
+</head>
+<body>
+    <h3 class="text-center m-2">Better Call Saul Characters</h3>
+    <div class="d-flex justify-content-center">
+        <div class="card text-center m-2" style="width: 18rem;">
+            <img class="card-img-top" src="chuck.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Chuck McGill</h5>
+                <p class="card-text" id="description">
+                    Chuck McGill is the brother of the main character, Jimmy. While at first he seems to want his 
+                    brother to be successful...
+                </p>
+                <a onclick="learnMore()" class="btn btn-primary" id="descButton" style="color: white;">Show more</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function learnMore(){
+        if(document.getElementById("descButton").innerText == "Show more"){
+            document.getElementById("description").innerText = "Chuck McGill is the brother of the main character, Jimmy. While at first he seems to want his brother to be successful, we quickly find out that he holds a grudge against Jimmy, and will go great lengths to keep him from being a lawyer.";
+            document.getElementById("descButton").innerText = "Show less"
+        }else{
+            document.getElementById("description").innerText = "Chuck McGill is the brother of the main character, Jimmy. While at first he seems to want his brother to be successful...";
+            document.getElementById("descButton").innerText = "Show more"
+        }
+    }
+</script>
+</html>
