@@ -50,7 +50,7 @@ function App() {
             </DropDownButton>
           </div>
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 mt-md-0 mt-3">
           <h2 className='mb-0'>Navbars</h2>
           <Navbar textColor='dark' bgColor='primary'/>
           <Navbar textColor='dark' bgColor='dark' />
